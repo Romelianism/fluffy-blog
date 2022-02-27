@@ -3,13 +3,30 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+const url = "https://fluffy-blog.vercel.app/";
+const title = "Fluffy's Awsome Blog About Him Self";
+const description =
+  "Chat with an AI that's powered by GPT-j. Talk with it, set parameters, ask questions, and twist words";
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Fluffy Blog</title>
-        <meta name="description" content="Fluffy's Awsome Blog About Him Self!" />
+        <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta property="og:url" content={url} />
+        <meta property="og:site_name" content={"Fluffy Blog"} />
+        <meta property="og:type" content={"website"} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={url + "Computer Fluffy"} />
+        <meta property="og:image:alt" content={description} />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@romelianism" />
+        <meta name="twitter:description" content={description} />
       </Head>
 
       <main className={styles.main}>
