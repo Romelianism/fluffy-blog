@@ -4,9 +4,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 const url = "https://fluffy-blog.vercel.app/";
-const title = "Fluffy's Awsome Blog About Him Self";
+const title = "Fluffy's Awesome Blog About Him Self";
 const description =
-  "Chat with an AI that's powered by GPT-j. Talk with it, set parameters, ask questions, and twist words";
+  "See Some Of Fluffy's Awesome Adventures";
 
 const Home: NextPage = () => {
   return (
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <meta property="og:type" content={"website"} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={url + "Computer Fluffy"} />
+        <meta property="og:image" content={url + "Computer%20Fluffy.jpg"} />
         <meta property="og:image:alt" content={description} />
 
         <meta name="twitter:card" content="summary" />
