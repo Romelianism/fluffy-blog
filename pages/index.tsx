@@ -16,6 +16,9 @@ const Home: NextPage = () => {
         <meta name="description" content={title} />
         <link rel="icon" href="/favicon.ico" />
 
+
+        <meta property="fb:app_id" content="377261767145225" />
+
         <meta property="og:url" content={url} />
         <meta property="og:site_name" content={"Fluffy Blog"} />
         <meta property="og:type" content={"website"} />
